@@ -12,13 +12,11 @@ const Settings: LayoutSettings & {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: '小康博客后台管理系统',
+  title: '东升笔记',
   pwa: false,
   menu: {
     locale: false,
   },
-  //logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
-  //iconfontUrl: '',
 };
 
 export default Settings;

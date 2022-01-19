@@ -12,7 +12,6 @@ export class ArticleStore {
   current: Current = { title: '' };
 
   constructor() {
-    // makeObservable 在mobx6 版本之后 比增加项
     makeAutoObservable(this);
   }
 

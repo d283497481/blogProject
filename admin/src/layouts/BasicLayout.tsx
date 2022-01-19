@@ -104,7 +104,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = ({ dispatch, children, ...other 
         {...other}
         {...settings}
       >
-        <WaterMark content="小康博客" fontSize={18}>
+        <WaterMark content="爱情公寓" fontSize={18}>
           {children}
         </WaterMark>
       </ProLayout>

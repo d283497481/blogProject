@@ -1,4 +1,5 @@
 import { getMenuData, getPageTitle } from '@ant-design/pro-layout';
+// @ts-ignore
 import DocumentTitle from 'react-document-title';
 import React from 'react';
 import { Link, useIntl } from 'umi';
@@ -35,7 +36,7 @@ const UserLayout: React.FC<any> = (props) => {
           <div className={styles.top}>
             <div className={styles.header}>
               <Link to="/">
-                <span className={styles.title}>小康博客后台管理系统</span>
+                <span className={styles.title}>东升笔记</span>
               </Link>
             </div>
             <div className={styles.desc}>欢迎使用！</div>

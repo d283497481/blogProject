@@ -41,7 +41,6 @@ const Release: React.FC = () => {
   }, [_current]);
 
   const onSumbit = (value: any) => {
-    console.log('博客后台管理系统', value, 'dsdsds', _current);
     const params = {
       ...value,
       artid: _current.artid,

@@ -75,13 +75,13 @@ function cosDelete(params: { key?: string; filePath?: string }, onSuccess?: any,
         Region: 'ap-chengdu',
         Key /* 必须 */,
       },
-      function (err: any, data: any) {
+      (err: any, data: any) => {
         if (err) {
           onError(err);
           return '';
         }
         console.log('删除文件', data);
-        onSuccess();
+        return onSuccess();
       },
     );
   } else {
