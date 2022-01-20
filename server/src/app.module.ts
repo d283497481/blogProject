@@ -11,6 +11,7 @@ import { UserModule } from './pages/user/user.module';
 import { DraftModule } from './pages/draft/draft.module';
 import { CommentModule } from './pages/comment/comment.module';
 import { ReplyModule } from './pages/reply/reply.module';
+import { FileModule } from './pages/file/file.module';
 
 @Module({
   imports: [
@@ -41,6 +42,7 @@ import { ReplyModule } from './pages/reply/reply.module';
     DraftModule,
     CommentModule,
     ReplyModule,
+    FileModule,
   ],
   controllers: [AppController],
   providers: [AppService],

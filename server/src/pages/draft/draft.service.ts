@@ -13,14 +13,14 @@ export class DraftService {
     private readonly draftRepository?: Repository<DraftEntity>,
   ) {}
 
-  //保存到草稿箱 只保存50条超过50条删除老的数据
+  //保存到草稿箱 只保存500条超过500条删除老的数据
   async save(params: any) {
     const { tagId, categoryId, id } = params;
     const _old = id && (await this.draftRepository.findOne(id));
 
     const qb = await getRepository(DraftEntity).createQueryBuilder('draft');
     const count = await qb.addSelect('draft.update_time').getMany();
-    if (count.length > 50) {
+    if (count.length > 500) {
       const res = await this.draftRepository.findOne(count[0].id);
       if (!!res) {
         this.draftRepository.remove(res);

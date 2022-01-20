@@ -156,21 +156,6 @@ const Release: React.FC = () => {
           <Input style={{ width: 380 }} />
         </Form.Item>
         <Form.Item name="cover_url" label="封面">
-          {/* <Upload
-            name="avatar"
-            listType="picture-card"
-            className="avatar-uploader"
-            showUploadList={false}
-            action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
-            beforeUpload={beforeUpload}
-            onChange={this.handleChange}
-          >
-            {imageUrl ? (
-              <img src={imageUrl} alt="avatar" style={{ width: '100%' }} />
-            ) : (
-              uploadButton
-            )}
-          </Upload> */}
           <Upload
             listType="picture-card"
             showUploadList={{

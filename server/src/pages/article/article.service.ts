@@ -22,10 +22,6 @@ export class ArticleService {
     } else {
       if (!title) throw new HttpException('缺少文章标题', 400);
       if (!content) throw new HttpException('请填写文章内容', 400);
-      // const doc = await this.articleRepository.findOne({ where: { title } });
-      // if (doc) {
-      //   throw new HttpException('文章已存在', 601);
-      // }
     }
     //查分类表
     const { categoryName } = await getRepository(CategoryEntity)

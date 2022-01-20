@@ -10,10 +10,6 @@ export class ArticleEntity {
   @Column({ length: 50 })
   title: string;
 
-  //作者 博客就是个人不需作者
-  // @Column({ length: 20, default: '' })
-  // author: string;
-
   //文章内容
   @Column('text')
   content: string;
@@ -41,9 +37,6 @@ export class ArticleEntity {
   //文章点赞次数
   @Column({ default: 0 })
   like: number;
-
-  // @Column({ type: 'tinyint', default: null })
-  // type: number;
 
   //创建时间
   @Column({
